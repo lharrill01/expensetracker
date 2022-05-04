@@ -30,7 +30,9 @@ function App() {
       <h2>Lets get started!</h2>
       <p>This is visible!</p>
       { expenses.map(( expense) => (
-        <ExpenseItem title={ expense.title } amount={ expense.amount } date={ expense.date } />
+        <div className='expenses'>
+          <ExpenseItem title={ expense.title } amount={ expense.amount } date={ expense.date } />
+        </div>
       ))}
     </div>
   );
